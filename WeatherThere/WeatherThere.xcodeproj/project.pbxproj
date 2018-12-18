@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		5D8F3C0DFC8A8666A60D726A /* Pods_WeatherThereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E36ED6ECE416EE1CFD08A04 /* Pods_WeatherThereTests.framework */; };
 		9879DB89C34FA97D40855D9D /* Pods_WeatherThere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA8CF3BCB8AA489FBC17B84 /* Pods_WeatherThere.framework */; };
+		9A1FEB1B21C9850F00A3E8D8 /* DialogServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FEB1A21C9850F00A3E8D8 /* DialogServiceProtocol.swift */; };
+		9A1FEB1D21C9854500A3E8D8 /* DialogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FEB1C21C9854500A3E8D8 /* DialogService.swift */; };
+		9A1FEB2021C985BF00A3E8D8 /* Translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FEB1F21C985BF00A3E8D8 /* Translations.swift */; };
+		9A1FEB2221C985E800A3E8D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A1FEB2121C985E800A3E8D8 /* Localizable.strings */; };
+		9A1FEB2521C9863200A3E8D8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FEB2421C9863200A3E8D8 /* StringExtension.swift */; };
+		9A1FEB2721C9866900A3E8D8 /* ControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FEB2621C9866900A3E8D8 /* ControllerHelper.swift */; };
 		9A816AEC21C84B6700ABD6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A816AEB21C84B6700ABD6E9 /* AppDelegate.swift */; };
 		9A816AEE21C84B6700ABD6E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A816AED21C84B6700ABD6E9 /* ViewController.swift */; };
 		9A816AF121C84B6700ABD6E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A816AEF21C84B6700ABD6E9 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 		544CE0507FFE10A126D322EE /* Pods-WeatherThereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherThereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherThereTests/Pods-WeatherThereTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57C381BC9A54CD08073AB6BD /* Pods-WeatherThere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherThere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherThere/Pods-WeatherThere.debug.xcconfig"; sourceTree = "<group>"; };
 		7E36ED6ECE416EE1CFD08A04 /* Pods_WeatherThereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherThereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1FEB1A21C9850F00A3E8D8 /* DialogServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogServiceProtocol.swift; sourceTree = "<group>"; };
+		9A1FEB1C21C9854500A3E8D8 /* DialogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogService.swift; sourceTree = "<group>"; };
+		9A1FEB1F21C985BF00A3E8D8 /* Translations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translations.swift; sourceTree = "<group>"; };
+		9A1FEB2121C985E800A3E8D8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9A1FEB2421C9863200A3E8D8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		9A1FEB2621C9866900A3E8D8 /* ControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHelper.swift; sourceTree = "<group>"; };
 		9A816AE821C84B6700ABD6E9 /* WeatherThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A816AEB21C84B6700ABD6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A816AED21C84B6700ABD6E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +87,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A1FEB1721C9849500A3E8D8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A1FEB1921C984A800A3E8D8 /* Implementations */,
+				9A1FEB1821C984A100A3E8D8 /* Protocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9A1FEB1821C984A100A3E8D8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A1FEB1A21C9850F00A3E8D8 /* DialogServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9A1FEB1921C984A800A3E8D8 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9A1FEB1C21C9854500A3E8D8 /* DialogService.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		9A1FEB1E21C9859600A3E8D8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9A1FEB1F21C985BF00A3E8D8 /* Translations.swift */,
+				9A1FEB2121C985E800A3E8D8 /* Localizable.strings */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9A1FEB2321C9861E00A3E8D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A1FEB2421C9863200A3E8D8 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9A816ADF21C84B6700ABD6E9 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +152,9 @@
 		9A816AEA21C84B6700ABD6E9 /* WeatherThere */ = {
 			isa = PBXGroup;
 			children = (
+				9A1FEB2321C9861E00A3E8D8 /* Extensions */,
+				9A1FEB1E21C9859600A3E8D8 /* Constants */,
+				9A1FEB1721C9849500A3E8D8 /* Services */,
 				9A816B0E21C9804A00ABD6E9 /* Helpers */,
 				9A816B0D21C947C700ABD6E9 /* ViewModels */,
 				9A816B0C21C947BF00ABD6E9 /* Models */,
@@ -144,6 +201,7 @@
 		9A816B0E21C9804A00ABD6E9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9A1FEB2621C9866900A3E8D8 /* ControllerHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -253,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A816AF621C84B6800ABD6E9 /* LaunchScreen.storyboard in Resources */,
+				9A1FEB2221C985E800A3E8D8 /* Localizable.strings in Resources */,
 				9A816AF321C84B6800ABD6E9 /* Assets.xcassets in Resources */,
 				9A816AF121C84B6700ABD6E9 /* Main.storyboard in Resources */,
 			);
@@ -339,8 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1FEB2721C9866900A3E8D8 /* ControllerHelper.swift in Sources */,
 				9A816AEE21C84B6700ABD6E9 /* ViewController.swift in Sources */,
+				9A1FEB2021C985BF00A3E8D8 /* Translations.swift in Sources */,
+				9A1FEB2521C9863200A3E8D8 /* StringExtension.swift in Sources */,
+				9A1FEB1B21C9850F00A3E8D8 /* DialogServiceProtocol.swift in Sources */,
 				9A816AEC21C84B6700ABD6E9 /* AppDelegate.swift in Sources */,
+				9A1FEB1D21C9854500A3E8D8 /* DialogService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  WeatherThere
+
+  Created by Robert Kuraj on 18/12/2018.
+  Copyright © 2018 Robert Kuraj. All rights reserved.
+*/
+
+"progress_dialog_title" = "Loading...";
+"alert_dialog_ok" = "OK";
+"alert_dialog_yes" = "YES";
+"alert_dialog_no" = "NO";
